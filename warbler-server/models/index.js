@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 mongoose.set("debug", true);
 mongoose.Promise = Promise;
 mongoose.connect(
-  "mongodb://localhost/warbler",
+  process.env.MONGODB_URI || "mongodb://localhost/warbler",
   {
     keepAlive: true
   }
@@ -10,4 +10,3 @@ mongoose.connect(
 
 module.exports.User = require("./user");
 module.exports.Message = require("./message");
-

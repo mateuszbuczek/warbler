@@ -1,6 +1,10 @@
 {
   "name": "warbler-server",
   "version": "1.0.0",
+  "engines": {
+    "node": "8.9.4",
+    "npm": "6.4.1"
+  },
   "description": "",
   "main": "index.js",
   "scripts": {
